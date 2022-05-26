@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+    <!-- Menu layouts -->
+    <LinearLayout
+        android:id="@+id/MenuPanel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@color/secondaryBG"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="2dp"
+            android:background="#1B2849"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/tvNotifications"
+            style="@style/MenuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification center" />
+
+        <TextView
+            android:id="@+id/tvWallpaper"
+            style="@style/MenuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper HQ" />
+
+        <TextView
+            android:id="@+id/tvCustomize"
+            style="@style/MenuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize phone" />
+
+        <TextView
+            android:id="@+id/tvSettings"
+            style="@style/MenuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/MenuPanelSmall"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@color/secondaryBG"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivMenuSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1B2849"
+            android:src="@drawable/menu" />
+    </LinearLayout>
+
+
+    <!-- content layouts  -->
+    <LinearLayout
+        android:id="@+id/lyNotifications"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+<Button
+    android:id="@+id/notifsBTN"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="text"/>
+        <TextView
+            android:id="@+id/imrunningoutofID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"/>
+        <ListView
+            android:id="@+id/lvNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--            android:divider = "#484848"-->
+        <!--            android:dividerHeight = "1dp"-->
+        <!--            android:footerDividersEnabled = "false"-->
+        <!--            android:headerDividersEnabled = "false"-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyWallpaper"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSetWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="set wallpaper" />
+
+        <ListView
+            android:id="@+id/lvWallpapers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#484848"
+            android:dividerHeight="2dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyCustomize"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lySettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch" />
+        <Button
+            android:id="@+id/customButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
